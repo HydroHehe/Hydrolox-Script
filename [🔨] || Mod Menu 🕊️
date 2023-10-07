@@ -7,11 +7,11 @@ local PTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-local Section = Tab:AddSection({
+local Section = PTab:AddSection({
 	Name = "Walk Speed"
 )}
 
-Tab:AddSlider({
+PTab:AddSlider({
 	Name = "Walk Speed",
 	Min = 0,
 	Max = 300,
@@ -28,7 +28,7 @@ local Section = PTab:AddSection({
   Name = "Jump Power"
 )}
 
-Tab:AddSlider({
+PTab:AddSlider({
   Name = "Jump Power",
   Min = 5,
   Max = 200,
@@ -37,4 +37,11 @@ Tab:AddSlider({
   Increment = 1,
   ValueName = "Power",
   CallBack = function(Value)
-    
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = (Value)
+
+local Tab = Window:MakeTab({
+	Name = "Infinite Jump",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
