@@ -50,6 +50,12 @@ local Section = ScriptTab:CreateSection("🔨 Mod Panel 🔨")
      local Button = Tab:CreateButton({
    Name = "Infinite Jump",
    Callback = function()
-   -- The function that takes place when the button is pressed
+   local infjmp = true
+game:GetService("UserInputService").jumpRequest:Connect(function()
+    if infjmp then
+        game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass"Humanoid":ChangeState("Jumping")
+    end
+end)
    end,
 })
+
