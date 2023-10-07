@@ -39,9 +39,15 @@ PTab:AddSlider({
   CallBack = function(Value)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = (Value)
 
-local Tab = Window:MakeTab({
-	Name = "Infinite Jump",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+
+local Section = Tab:AddSection({
+	Name = "Gun Mod"
+})
+
+Tab:AddButton({
+	Name = "Mod",
+	Callback = function()
+      	  loadstring(game:HttpGet((https://pastebin.com/raw/PxA2ezs0)))
+  	end    
 })
 
