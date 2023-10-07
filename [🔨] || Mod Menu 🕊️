@@ -85,6 +85,17 @@ Tab:AddButton({
   	end    
 })
 
+local Section = Tab:AddSection({
+	Name = "Kick GUI"
+})
+
+Tab:AddButton({
+	Name = "Open GUI",
+	Callback = function()
+      		loadstring(game:HttpGet((https://pastebin.com/W7Bq93cV)))
+  	end    
+})
+
 
 
 OrionLib:Init()
