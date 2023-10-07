@@ -51,3 +51,12 @@ Tab:AddButton({
   	end    
 })
 
+local Tab = Window:MakeTab({
+	Name = "Pro || Mod Menu",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = true
+})
+
+
+
+OrionLib:Init()
