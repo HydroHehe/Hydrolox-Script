@@ -15,7 +15,7 @@ _G.Key = "HydroPass" -- You Put Your Key Here
 _G.KeyInput = "string"
 
 function MakeScriptHub()
-loadstring(game:HttpGet((""), true))() -- You Put Your Script Here
+loadstring(game:HttpGet(("https://pastebin.com/FqdAbZYS"), true))() -- You Put Your Script Here
 
 end
 
