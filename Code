@@ -10,6 +10,22 @@ KeySystem = true, -- Set this to true to use our key system
    }
 })
 
+  Rayfield:Notify({
+   Title = "🔨 || Mod Menu",
+   Content = "Loaded",
+   Duration = 6.5,
+   Image = 4483362458,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Okay!",
+         Callback = function()
+         print("The user tapped Okay!")
+      end
+   },
+},
+})
+
+
 local CmdGui = Instance.new("ScreenGui")
 local Background = Instance.new("Frame")
 local CmdName = Instance.new("TextLabel")
