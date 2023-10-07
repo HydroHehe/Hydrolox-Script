@@ -31,3 +31,19 @@ local Tab = Window:CreateTab("Scripts", nil) -- Title, Image
 local Section = ScriptTab:CreateSection("🔨 Mod Panel 🔨")
 
    
+     Rayfield:Notify({
+   Title = "Hydrolox Notification",
+   Content = "Hydrolox Hub has been loaded!",
+   Duration = 6.5,
+   Image = 4483362458,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Thank you",
+         Callback = function()
+         print("The user tapped button")
+      end
+   },
+},
+})
+
+    
