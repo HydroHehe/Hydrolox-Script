@@ -27,3 +27,4 @@ local Window = Rayfield:CreateWindow({
 })
 
      
+local Tab = Window:CreateTab("Scripts", nil) -- Title, Image
