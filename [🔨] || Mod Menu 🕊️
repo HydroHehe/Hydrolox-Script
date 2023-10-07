@@ -39,9 +39,52 @@ PTab:AddSlider({
   CallBack = function(Value)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = (Value)
 
-local Tab = Window:MakeTab({
+local Section = PTab:AddSection({
 	Name = "Infinite Jump",
+})
+
+PTab:AddToggle({
+	Name = "Infinite Jump",
+	Default = false,
+	Callback = function(Value)
+		Value = pcall(loadstring(game:HttpGet("https://pastebin.com/raw/2wgbZ6Xd")))
+
+local Section = Tab:AddSection({
+	Name = "Notification Toggle"
+})
+
+PTab:AddToggle({
+	Name = "Notifications",
+	Default = false,
+	Callback = function(Value)
+		Value = loadstring(game:HttpGet("https://github.com/HydroHehe/Notification/blob/main/Code)))
+})
+
+local Tab = Window:MakeTab({
+	Name = "Prison Life",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Kill All"
+})
+
+Tab:AddButton({
+	Name = "Kill",
+	Callback = function()
+      		function = loadstring(game:HttpGet("https://pastebin.com/raw/vNLbSj28")))
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Gun Mod"
+})
+
+Tab:AddButton({
+	Name = "Button!",
+	Callback = function()
+      		function = loadstring(game:HttpGet("https://pastebin.com/raw/PxA2ezs0")))
+  	end    
 })
 
